@@ -1,0 +1,26 @@
+.letter
+{
+    text-align: center;
+    background-color:lightblue;
+}
+.wins
+{
+   background-color:green;
+}
+
+.losses 
+{
+    background-color: red;
+}
+
+.guesses
+{
+    background-color:yellow;
+}
+
+.sofar
+
+{
+    background-color:gray;
+}
+
