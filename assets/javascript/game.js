@@ -4,7 +4,7 @@
 var wins = 0;
 // number of losses to start:
 var losses = 0;
-// number of guesses left to start:
+// number of guesses left to start. I want a 9 to show.:
 var guessesLeft = 9;
 //   There is definitely a better way to set up this array, but in the interest of not adding more headache, I'm just going to write it all out. 
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -59,10 +59,8 @@ document.onkeyup = function (event) {
     }
     //Displays the wins applying:
     winsText.textContent = wins;
-    // Displays the guesses applying:
+    // Displays the guesses applying, starting with 9:
     guessesLeftText.textContent = guessesLeft;
-
-    // So far this accounts for wins increasing, and guesses decreasing (although it doesn't display 9 yet)
 
     // Now I need to have make a way for losses to increase by 1 if guesses left reaches 0. 
     lossesText.textContent= losses;
@@ -70,9 +68,6 @@ document.onkeyup = function (event) {
     // I also need to display the user's guess. I'll do that using userText. 
     userChoiceText.textContent = lettersGuessed.join(",");
 
-    // Need to display 
-    
-   
     // BUT I need these to list up until 9 guesses, rather than resubmitting a number each time. 
     
 }
