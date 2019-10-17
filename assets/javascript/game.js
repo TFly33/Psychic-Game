@@ -16,7 +16,6 @@ var lettersGuessed = []
 
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
-// This particular var isn't currently doing anything. I need to define "guessesLeftText"
 var guessesLeftText = document.getElementById("guessesLeft-text");
 var userChoiceText = document.getElementById("guessesSoFar-text");
 
@@ -31,7 +30,7 @@ var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.l
 //   This a global function attempting to reset the game given certain conditions. I can use it later on. 
 function reset() {
     // New variable. computerguess = random letter a-z. 
-   var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 //    Lets console.log to make sure it work. 
    console.log("Computer guess on Reset: " + computerGuess);
 //    Now I need to say that letters guessed equals empty, because I want the letters Guessed section to reset when losses goes up by 1 (and guesses are out.)
