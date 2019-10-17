@@ -1,26 +1,25 @@
-.letter
+
+body
 {
-    text-align: center;
-    background-color:lightblue;
-}
-.wins
-{
-   background-color:green;
+    background-image: url("https://www.maxpixel.net/static/photo/2x/Psychic-Fortune-Tarot-Magic-Cards-Occult-4135257.jpg");
+    
 }
 
-.losses 
+h1
 {
-    background-color: red;
+color:white;
+font-size: 50px;
 }
 
-.guesses
+.container
 {
-    background-color:yellow;
+    width: 250px;
+    background-color:white;
+    padding: 10px;
+    border: 2px solid gray;
 }
-
-.sofar
-
+p
 {
-    background-color:gray;
+    color: gray;
+    line-height: 2;
 }
-

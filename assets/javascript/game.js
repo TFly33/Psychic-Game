@@ -22,7 +22,7 @@ var userChoiceText = document.getElementById("guessesSoFar-text");
 
 // This is to have the display amount of guesses left to 9: 
 guessesLeftText.textContent = guessesLeft;
-winsText.textContent = wins;
+// winsText.textContent = wins;
 
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 // Now I need to randomly choose a choice from the 26 letter options array. Still in the same function of user pressing a key. But how do I get the random choice to survive 
@@ -58,7 +58,7 @@ document.onkeyup = function (event) {
     if (userGuess === computerGuess) {
         // then we increase wins. 
         wins++;
-        // AND the computer guesses again.
+        // AND the computer guesses again, which we address with the reset function. 
         // computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         // AND we reset guesses left to 9. 
         guessesLeft = 9;
