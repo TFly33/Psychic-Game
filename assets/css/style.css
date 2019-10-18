@@ -1,14 +1,16 @@
 
 body
 {
-    background-image: url("https://www.maxpixel.net/static/photo/2x/Psychic-Fortune-Tarot-Magic-Cards-Occult-4135257.jpg");
-    
+    background-image: url("../../assets/images/eye.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; 
 }
 
 h1
 {
 color:white;
 font-size: 50px;
+margin: 20px;
 }
 
 .container
